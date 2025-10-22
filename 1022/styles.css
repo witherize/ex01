@@ -1,0 +1,34 @@
+/* 設定頁面無邊距 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* 背景GIF設置 */
+.video-back {
+    position: fixed; /* 固定定位 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 讓背景佔滿整個頁面 */
+    height: 100%; /* 讓背景佔滿整個頁面 */
+    background: url('neuro-sama-ai.gif') no-repeat center center; /* 設置GIF作為背景圖片 */
+    background-size: cover; /* 保持圖片比例並填滿畫面 */
+    z-index: -1; /* 讓背景在內容下方 */
+}
+
+/* 文字樣式 */
+.content {
+    position: absolute;
+    top: 50%; /* 置中 */
+    left: 50%; /* 置中 */
+    transform: translate(-50%, -50%); /* 完全置中 */
+    text-align: center;
+    z-index: 1; /* 確保文字顯示在背景之上 */
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
